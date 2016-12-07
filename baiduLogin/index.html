@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>百度登陆界面</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/1.0.8/iconfont.css">
+    <script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+</head>
+
+<body>
+    <!-- <i class="Hui-iconfont Hui-iconfont-tianqi-duoyun" style="font-size: 25px;"></i> -->
+    <div id="wrapper">
+        <!-- 下边框 -->
+        <div class="s_top_wrap" id="s_top_wrap"></div>
+        <!-- 左侧天气 换肤等 -->
+        <div class="s_top_left">
+            <!-- 天气 -->
+            <div class="s_weather_wrapper">
+                <!-- 天气正文 -->
+                <div class="s_weather">
+                    <!-- a标签 -->
+                    <a href="#" class="city_weather">
+                        <div class="show-weather">
+                            <span class="show-city">上海：</span>
+                            <span class="Hui-iconfont Hui-iconfont-tianqi-duoyun" style="font-size: 14px;"></span>
+                            <span>15℃</span>
+                        </div>
+                        <div class="show-pollution">
+                            <span class="show-pollution-name">优</span>
+                            <span class="show-pollution-number">29</span>
+                            <span class="show-vertical">|</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- 换肤等 -->
+            <div class="s_icons">
+                <a href="#"><span>宝箱</span></a>
+                <a href="#" id="changeSkin_btn"><span>换肤</span></a>
+                <a href="#"><span>消息</span></a>
+            </div>
+        </div>
+        <!-- 右侧设置 等 -->
+        <div class="s_top_right">
+            <a href="#" class="bold">糯米</a>
+            <a href="#" class="bold">新闻</a>
+            <a href="#" class="bold">hao123</a>
+            <a href="#" class="bold">地图</a>
+            <a href="#" class="bold">视频</a>
+            <a href="#" class="bold">贴吧</a>
+            <a href="#">当前用户</a>
+            <a href="#">设置</a>
+            <a href="#" class="morePro">更多产品</a>
+            <div class="right-col-pro">
+                <span class="right-morePro">更多产品</span>
+                <a href="#">
+                    <img src="images/music.png"> 音乐
+                </a>
+                <a href="#">
+                    <img src="images/image.png"> 图片
+                </a>
+                <a href="#">
+                    <img src="images/zhidao.png"> 知道
+                </a>
+                <a href="#">
+                    <img src="images/wenku.png"> 文库
+                </a>
+                <a href="#">
+                    <img src="images/bang.png"> 风云榜
+                </a>
+                <a href="#">
+                    <img src="images/tuiguang.png"> 百度推广
+                </a>
+                <a href="#" class="all-pro">
+            		全部产品>>
+            	</a>
+            </div>
+        </div>
+        <!-- 表单 -->
+        <div class="s_form">
+            <div id="logo">
+                <img src="images/bd_logo.png" width="270px" height="129px" class="bd_logo">
+            </div>
+            <form id="form">
+                <!-- input -->
+                <div class="s_search">
+                    <input id="s_input" name="s_input" />
+                    <span class="soutu-btn"></span>
+                </div>
+                <!-- btn -->
+                <div class="s_btn">
+                    <input type="submit" value="百度一下" id="btn" />
+                </div>
+            </form>
+        </div>
+        <!-- 内容 -->
+        <div class="s_wrap" id="s_wrap">
+            <div class="s_main">
+                <!-- 菜单 -->
+                <div class="s_menu_container">
+                    <div class="s_menus">
+                        <div class="s_mine" id="s_mine">
+                            <span class="s_menu_user_icon"></span>
+                            <span class="s_menu_user">我的关注</span>
+                        </div>
+                        <span class="active_menu" id="intro">推荐</span>
+                        <span id="nav">导航</span>
+                        <span id="shopping">购物</span>
+                        <span id="setting" class="menu_setting"></span>
+                    </div>
+                </div>
+                <!-- 内容 -->
+                <div class="s_contents">
+                    <div class="s_contents_care" id="s_contents_care">
+                        <div class="myNav">
+                            <span class="right-arrow"></span>
+                            <span>我的导航</span>
+                            <span class="nav_num">(0)</span>
+                        </div>
+                        <div class="diy">
+                            <span class="plus-icon"></span> 自定义
+                        </div>
+                    </div>
+                    <div class="s_contents_intro" id="s_contents_intro">
+                        <!-- 左边部分 -->
+                        <div class="s_contents_left">
+                            <div class="intro-text">
+                                <span class="left-line"></span>
+                                <span class="intro-bdlogo"></span>
+                                <span class="text">以下信息根据您的兴趣推荐</span>
+                                <span class="right-line"></span>
+                                <div class="s_intro_news">
+                                    <a href="#">标题1</a>
+                                    <span>来源</span>
+                                    <span>时间</span>
+                                    <span class="s_intro_news_hot">热点</span>
+                                </div>
+                                <div class="s_intro_news">
+                                    <a href="#">标题2</a>
+                                    <span>来源</span>
+                                    <span>时间</span>
+                                    <span class="s_intro_news_hot">热点</span>
+                                </div>
+                                <div class="s_intro_news">
+                                    <a href="#">标题3</a>
+                                    <span>来源</span>
+                                    <span>时间</span>
+                                    <span class="s_intro_news_hot">热点</span>
+                                </div>
+                                <div class="s_intro_news">
+                                    <a href="#">标题</a>
+                                    <span>来源</span>
+                                    <span>时间</span>
+                                    <span class="s_intro_news_hot">热点</span>
+                                </div>
+                                <div class="s_intro_news">
+                                    <a href="#">标题</a>
+                                    <span>来源</span>
+                                    <span>时间</span>
+                                    <span class="s_intro_news_hot">热点</span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 右边部分 -->
+                        <div class="s_contents_right">
+                            <span class="hot-now">实时热点</span>
+                            <ul>
+                                <li>热点1</li>
+                                <li>热点2</li>
+                                <li>热点3</li>
+                                <li>热点4</li>
+                                <li>热点5</li>
+                                <li>热点6</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="s_contents_nav" id="s_contents_nav">
+                        <div class="gonna-like">猜你喜欢</div>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                        <a href="#">xxx</a>
+                    </div>
+                    <div class="s_contents_shopping" id="s_contents_shopping"></div>
+                </div>
+                <div class="s_more_bar">
+                    <div class="text">滚动查看更多</div>
+                    <div class="rect"></div>
+                </div>
+            </div>
+        </div>
+        <!-- 尾部 -->
+        <div class="s_footer">
+            <div class="s_footer_first">
+                <a href="#" class="sethome">设为首页</a>
+                <span>2016&nbsp;Baidu&nbsp;</span>
+                <a href="#">使用百度前必读</a>&nbsp;
+                <a href="#">意见反馈</a>&nbsp;
+                <span>京ICP证030173号&nbsp;</span>
+                <img src="images/copy_rignt_24.png" width="13" height="16">
+            </div>
+            <div class="s_footer_second">
+                <a href="#">
+                    <img src="images/icon-police.png" class="police"> 京公网安备11000002000001号
+                </a>
+            </div>
+        </div>
+        <!-- 换肤 -->
+        <div class="changeSkin" id="changeSkin">
+            <!-- 利用absolute来设置border -->
+            <div class="skin_border"></div>
+            <div class="skin_layout">
+                <div class="skin_menu_layout">
+                    <div class="skin_menu">
+                        <span class="skin_active">菜单1</span>
+                        <span>菜单2</span>
+                        <span>菜单3</span>
+                    </div>
+                    <div class="slide_on" id="slide_on">
+                        <span class="slide_icon"></span>
+                        <span>收起</span>
+                    </div>
+                    <div class="delete_skin"><span>不使用皮肤</span></div>
+                </div>
+                <div class="skin_content">
+                    <span class="coral"></span>
+                    <span class="yellowgreen"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div id="bg"></div> -->
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+
+</html>
